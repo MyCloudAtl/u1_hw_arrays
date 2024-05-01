@@ -21,8 +21,8 @@ Note: 'pizza' should be the first item in the array, followed by 'cheeseburger'.
 Complete Exercise 2 in the space below:
 */
 
-
-
+//const foods = [`pizza`, `cheeseburger`]
+foods.push(`pizza`,`cheeseburger`)
 console.log('Exercise 2 result:', foods);
 
 
@@ -34,7 +34,7 @@ Exercise 3: Insert at the beginning
 Complete Exercise 3 in the space below:
 */
 
-
+foods.unshift(`taco`)
 
 console.log('Exercise 3 result:', foods);
 
@@ -51,9 +51,8 @@ Complete Exercise 4 in the space below:
 */
 
 
-
+let favFood = foods[1]
 console.log('Exercise 4 result:', favFood);
-
 
 
 /*
@@ -66,6 +65,7 @@ Complete Exercise 5 in the space below:
 
 
 
+foods.splice(2,0,`tofu`)
 console.log('Exercise 5 result:', foods);
 
 
@@ -78,7 +78,8 @@ Complete Exercise 6 in the space below:
 */
 
 
-
+foods[1] = `sushi`
+foods.splice(2,0, `cupcake`)
 console.log('Exercise 6 result:', foods)
 
 
@@ -94,7 +95,7 @@ Exercise 7: Using the `slice()` method
 Complete Exercise 7 in the space below:
 */
 
-
+let yummy = foods.slice(1,3)
 console.log('Exercise 7 result:', yummy);
 
 
@@ -110,7 +111,7 @@ Complete Exercise 8 in the space below:
 */
 
 
-
+let soyIdx = foods.indexOf(`tofu`, 0)
 console.log('Exercise 8 result:', soyIdx);
 
 
@@ -129,7 +130,7 @@ Complete Exercise 9 in the space below:
 */
 
 
-
+let allFoods = (foods.join(` -> `))
 console.log('Exercise 9 result:', allFoods);
 
 
@@ -144,6 +145,5 @@ Exercise 10: Check for an element
 Complete Exercise 10 in the space below:
 */
 
-
-
+hasSoup = foods.includes(`soup`,0);
 console.log('Exercise 10 result:', hasSoup);
